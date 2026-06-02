@@ -53,14 +53,22 @@ Open your browser and go to: http://localhost:8000
 You should see: {"message":"LLM Grading System","status":"running","mock_mode":false}
 
 API Endpoints
-Method	Endpoint	               Description
+Method	Endpoint	Description
 POST	/api/jobs	Create a grading job
+
 POST	/api/jobs/{id}/upload	Upload CSV with student answers
+
 POST	/api/jobs/{id}/grade	Start automated grading
+
 GET	/api/jobs/{id}/results	Get grading results
+
 PUT	/api/override	Manually override a grade
+
 GET	/api/jobs/{id}/export	Export results as CSV
+
 GET	/api/evaluate/{id}	Run evaluation (QWK, RMSE)
+
+
 
 CSV Format
 Your CSV file should have at least these columns:
