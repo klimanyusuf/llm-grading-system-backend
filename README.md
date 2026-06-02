@@ -53,7 +53,9 @@ Open your browser and go to: http://localhost:8000
 You should see: {"message":"LLM Grading System","status":"running","mock_mode":false}
 
 API Endpoints
-Method	Endpoint	Description
+
+Method	 Endpoint	           Description
+
 POST	/api/jobs	Create a grading job
 
 POST	/api/jobs/{id}/upload	Upload CSV with student answers
@@ -74,7 +76,9 @@ CSV Format
 Your CSV file should have at least these columns:
 
 student_id,answer
+
 CIT001,The CPU is the brain of the computer.
+
 CIT002,CPU dey process all instructions.
 
 Docker Deployment
